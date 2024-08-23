@@ -13,6 +13,8 @@ export type TStoreValue<TMap, TMapKey extends keyof TMap> = TMap[TMapKey]
 export type TStorePartial<TMap, TMapKey extends keyof TMap> = Partial<
   TMap[TMapKey]
 >
+
+// Constructor
 export type TStoreConstructor<TMap> = {
   name?: string // For devtools, if set it will activate the devtools
   initialMap?: Map<keyof TMap, TMap[keyof TMap]>
@@ -20,9 +22,9 @@ export type TStoreConstructor<TMap> = {
   devtools?: boolean
   type?: 'map' | 'object'
 }
+
 // Nested
 type Primitive = string | number | boolean | null | undefined
-
 type PathImpl<T, K extends keyof T> = K extends string
   ? T[K] extends Primitive
     ? [K]
@@ -32,7 +34,6 @@ type PathImpl<T, K extends keyof T> = K extends string
   : never
 
 type Path<T> = [keyof T] | PathImpl<T, keyof T>
-
 type PathValue<T, P extends Path<T>> = P extends [infer K]
   ? K extends keyof T
     ? T[K]
@@ -61,7 +62,7 @@ type DevToolsMessage = {
   }
   state?: string
 }
-export type WindowWithDevTools = Window & {
+type WindowWithDevTools = Window & {
   __REDUX_DEVTOOLS_EXTENSION__?: DevToolsExtension
 }
 
