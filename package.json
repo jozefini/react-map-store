@@ -1,7 +1,7 @@
 {
   "name": "@codesync/store",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "WordPress equivalent of wp_kses for React and RSC",
   "publishConfig": {
     "access": "public"
@@ -14,8 +14,8 @@
   "repository": {
     "url": "git+https://github.com/jozefini/codesync-kses.git"
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
