@@ -1,0 +1,5 @@
+---
+"@codesync/store": patch
+---
+
+init
