@@ -1,0 +1,40 @@
+{
+  "name": "@codesync/kses",
+  "license": "MIT",
+  "version": "2.1.5",
+  "description": "WordPress equivalent of wp_kses for React and RSC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "js",
+    "library"
+  ],
+  "author": "Jozefini",
+  "repository": {
+    "url": "git+https://github.com/jozefini/codesync-kses.git"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "lint": "tsc",
+    "publish": "pnpm publish",
+    "release": "pnpm run build && pnpm publish --no-git-checks"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "prettier": "^3.2.4",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "bugs": {
+    "url": "https://github.com/jozefini/codesync-kses/issues"
+  },
+  "homepage": "https://github.com/jozefini/codesync-kses#readme",
+  "dependencies": {
+    "@types/react": "^18.3.4",
+    "react": "^18.3.1"
+  }
+}
