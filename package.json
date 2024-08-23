@@ -21,7 +21,7 @@
     "build": "tsup",
     "lint": "tsc",
     "publish": "pnpm publish",
-    "release": "pnpm run build && pnpm publish --no-git-checks"
+    "release": "pnpm run build && pnpm publish --no-git-checks --access public"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
