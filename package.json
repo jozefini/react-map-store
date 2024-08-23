@@ -1,5 +1,5 @@
 {
-  "name": "@codesync/store",
+  "name": "firecode",
   "license": "MIT",
   "version": "1.0.4",
   "description": "WordPress equivalent of wp_kses for React and RSC",
