@@ -1,7 +1,7 @@
 {
   "name": "@codesync/store",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "WordPress equivalent of wp_kses for React and RSC",
   "publishConfig": {
     "access": "public",
@@ -21,8 +21,7 @@
   "scripts": {
     "build": "tsup",
     "lint": "tsc",
-    "publish": "pnpm publish",
-    "release": "pnpm run build && pnpm publish --no-git-checks --access public"
+    "release": "pnpm run build && pnpm publish --no-git-checks --access public --no-git-checks"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",

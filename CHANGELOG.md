@@ -1,5 +1,11 @@
 # @codesync/store
 
+## 1.0.4
+
+### Patch Changes
+
+- fix action
+
 ## 1.0.3
 
 ### Patch Changes
